@@ -6,7 +6,7 @@ public class Palindrome {
         int left = 0, right = str.length() - 1;
         while (right > left) {
             if (str.charAt(left) != str.charAt(right)) {
-                return checker(str,left+1,right) || checker(str,left,right-1);
+                return checker(str, left + 1, right) || checker(str, left, right - 1);
             }
             left++;
             right--;
@@ -14,9 +14,9 @@ public class Palindrome {
         return true;
     }
 
-    public boolean checker(String s, int l, int r){
-        while(l < r){
-            if(s.charAt(l++)!= s.charAt(r--)) return false;
+    public boolean checker(String s, int l, int r) {
+        while (l < r) {
+            if (s.charAt(l++) != s.charAt(r--)) return false;
         }
         return true;
     }
