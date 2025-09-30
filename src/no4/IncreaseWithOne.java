@@ -19,6 +19,6 @@ public class IncreaseWithOne {
             newArr[i] = k;
             n /= 10;
         }
-        System.out.println(newArr);
+        System.out.println(Arrays.toString(newArr));
     }
 }
