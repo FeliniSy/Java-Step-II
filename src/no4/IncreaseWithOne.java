@@ -13,13 +13,12 @@ public class IncreaseWithOne {
         }
 
         int n = Integer.parseInt(sb.toString()) + 1;
-        System.out.println(n);
         int[] newArr = new int[arr.length];
         for (int i = arr.length - 1; i >= 0; i--) {
             int k = n % 10;
             newArr[i] = k;
             n /= 10;
         }
-        System.out.println(Arrays.toString(newArr));
+        System.out.println(newArr);
     }
 }
